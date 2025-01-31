@@ -38,3 +38,17 @@ function addExpenseToList(expense) {
   listItem.textContent = `Name: ${expense.name}, Amount: ${expense.amount}, Price: $${expense.price}, Date: ${expense.date}`;
   expenseList.appendChild(listItem);
 }
+
+window.onload = function() {
+  fetch('http://localhost:5000/api/expenses')
+  .then(response => response.json())
+  .then(expenses => {
+      expenses.forEach(expense => addExpenseToList({
+          name: expense[1], // Assuming expense format is [(id, name, amount, date)...]
+          amount: expense[2],
+          price: expense[3],
+          date: expense[4]
+      }));
+  })
+  .catch(error => console.error('Error fetching expenses:', error));
+};
