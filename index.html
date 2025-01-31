@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Expenses Tracker</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -18,12 +18,8 @@
         <a href="#">Contact</a>
     </div>
   </header>
-  
+
   <div class="row">
-        <div class="column side">
-            <h2>Instructions</h2>
-            <p>Use the form below to add your expenses.</p>
-        </div>
         <div class="column middle">
             <h2>Add Expense</h2>
             <form id="expenseForm">
@@ -33,15 +29,16 @@
                 <label for="expenseAmount">Amount:</label>
                 <input type="number" id="expenseAmount" required>
 
-                <label for="expenseCategory">Category:</label>
-                <input type="text" id="expenseCategory" required>
+                <label for="expensePrice">Price:</label>
+                <input type="number" id="expensePrice" required>
+
+                <label for="expenseDate">Date:</label>
+                <input type="date" id="expenseDate" required>
 
                 <button type="submit">Add Expense</button>
             </form>
             <h2>Expense List</h2>
-            <ul id="expenseList">
-                <!-- List of expenses will be dynamically populated here -->
-            </ul>
+            <ul id="expenseList"></ul>
         </div>
         <div class="column side">
             <h2>Statistics</h2>
