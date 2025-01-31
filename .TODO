@@ -1,36 +1,36 @@
 # Expense Tracker Project TODO
 
 ## HTML
-- [ ] Create index.html
+- [✔️] Create index.html
   - [ ] Set up structure for adding expenses
   - [ ] Create form for adding expense name, amount, and category
   - [ ] Display tracker section for showing added expenses
 
 ## CSS
-- [ ] Create style.css
+- [✔️] Create style.css
   - [ ] Style the tracker table
   - [ ] Style the input form
   - [ ] Ensure responsive design for different devices
 
 ## JavaScript
-- [ ] Create script.js
+- [✔️] Create script.js
   - [ ] Implement function to handle adding expenses
   - [ ] Implement function to handle deleting expenses
   - [ ] Implement function to display expenses in the tracker
   - [ ] Implement localStorage functionality to save expense data for persistence
 
 ## Python (Optional for Backend)
-- [ ] Create app.py (if using Flask/Django)
+- [✔️] Create app.py (if using Flask/Django)
   - [ ] Set up Flask or Django framework
   - [ ] Create API endpoints for CRUD operations
   - [ ] Connect to the database to store expenses
 
 ## Database (Optional)
-- [ ] Create expenses.db or equivalent (SQLite)
+- [✔️] Create expenses.db or equivalent (SQLite)
   - [ ] Design database schema for storing expense data
   - [ ] Ensure proper connections from the backend
 
 ## Optional Files
-- [ ] Create assets/ folder
+- [✔️] Create assets/ folder
   - [ ] Include JS charting libraries (e.g., Chart.js) for graphs
   - [ ] Prepare images or other assets needed for tracking visualizations
